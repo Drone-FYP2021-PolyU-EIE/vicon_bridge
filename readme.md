@@ -19,7 +19,6 @@ Child frame_id for TF.
 `EKF2_AID_MASK` to `15`   
 `EKF2_HGT_MODE` to `3`(Vision)    
 
-### ATT Q
-
 if you are using USB to connect UAV   
 `CBRK_USB_CHK` check if it is `197848`    
+### ATT
