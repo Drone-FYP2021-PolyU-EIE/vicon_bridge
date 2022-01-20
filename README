@@ -1,3 +1,15 @@
+# Setup
+
+Clone to the Ros Workspace    
+~
+git clone https://github.com/ethz-asl/vicon_bridge.git
+~
+~
+
+~
+
+
+
 This is a driver providing data from VICON motion capture systems. It is based on the vicon_mocap package from the starmac stacks. 
 Additionally, it can handle multiple subjects / segments and allows to calibrate an origin of the vehicle(s) as this is somehow tedious with the VICON Tracker.
 
