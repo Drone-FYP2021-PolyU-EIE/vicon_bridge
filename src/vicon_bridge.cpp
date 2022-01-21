@@ -43,6 +43,7 @@
 #include <tf/transform_broadcaster.h>
 #include <tf/transform_listener.h>
 #include <geometry_msgs/TransformStamped.h>
+#include <geometry_msgs/PoseStamped.h>
 #include <vicon_bridge/viconGrabPose.h>
 #include <vicon_bridge/Markers.h>
 #include <vicon_bridge/Marker.h>
