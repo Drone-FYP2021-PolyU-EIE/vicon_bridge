@@ -338,8 +338,10 @@ private:
 
     if(publish_tf_)
     {
-      spub.pub = nh.advertise<geometry_msgs::TransformStamped>(tracked_frame_suffix_ + "/" + subject_name + "/"
-                                                                                                            + segment_name, 10);
+      spub.pub = nh.advertise<geometry_msgs::TransformStamped>(tracked_frame_suffix_ + "/" + subject_name + "/" + segment_name, 10);
+      if (segment_name == "UAV_EIE"){
+        spub.pub = nh.advertise<geometry_msgs::PoseStamped>(tracked_frame_suffix_ + "/" + subject_name + "/" + segment_name"/pose", 10);
+      }
     }
     // try to get zero pose from parameter server
     string param_suffix(subject_name + "/" + segment_name + "/zero_pose/");
